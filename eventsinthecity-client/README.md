@@ -1,7 +1,7 @@
 
 
-# eventsinthecity
-# This web application that was created will show both technical events and recreational activities in a city. This app is geared towards students trying to balance attending seminars, meetups and fun activities
+# Eventsinthecity
+This web application that was created will show both technical events and recreational activities in a city. This app is geared towards students trying to balance attending seminars, meetups and fun activities
 
 
 ## Usage
