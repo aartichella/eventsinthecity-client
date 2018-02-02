@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Events in The City</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/eventDetails.css' />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="angularjs/login.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="displaycontent" style="z-index: 1000;">
+      <div class="navi">
+        <nav class="navbar navbar-expand-lg  custom-navbar">
+          <a class="navbar-brand custom-brand" href="/homepage">Events In the City</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav mr-auto">
+
+              <li class="nav-item">
+                <a class="nav-link" href="/about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contactUs">CONTACT US</a>
+              </li>
+            </ul>
+
+            <div class="navbar-collapse collapse dual-collapse">
+              <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">SIGNUP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">LOGIN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+    <hr/>
+  </header>
+
+  <div class="backpage">
+    <a class="back" onclick="window.history.back()">Go back to Home page</a>
+  </div>
+
+
+  <div class="container details">
+    <p class="detailtitle">Event Details</p>
+    <div class="jumbotron details">
+
+      <div>
+        <h2><%= featuredEvent.title %></h2>
+        <div class="card-image">
+          <img src="<%= featuredEvent.image %>" alt="No image available" />
+        </div>
+        <p>
+          <Strong>Location : </Strong>
+          <%=featuredEvent.location%>
+        </p>
+        <p>
+          <Strong>Description: </Strong>
+          <%=featuredEvent.description%>
+        </p>
+        <p>
+        <p>
+            <a class="findout" href="/login">Find out More...</a>
+
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p class="footertext">Copyright © 2017 Events in the City. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
